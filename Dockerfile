@@ -12,4 +12,4 @@ ADD index.html /usr/share/nginx/html/index.html
  
 EXPOSE 80/tcp
  
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-c", "/etc/nginx/nginx.conf", "-g", "daemon off;"]
