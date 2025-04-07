@@ -11,5 +11,5 @@ spec:
     name: {{ .Values.appName }}
     weight: 100
   port:
-    targetPort: flask
+    targetPort: 8080
   wildcardPolicy: None

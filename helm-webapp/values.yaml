@@ -6,5 +6,9 @@ configmap:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: frendzprasath/centos-nginx
-  tag: v3
+  name: eyesoncloud/webapp
+  tag: 34
+
+service:
+  type: ClusterIP
+  port: 80

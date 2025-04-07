@@ -7,9 +7,10 @@ metadata:
 spec:
   ports:
   - port: 80
+    targetPort: 8080
     protocol: TCP
     name: flask
   selector:
     app: {{ .Values.appName }}
     tier: frontend
-  type: NodePort
+  type: {{ .Values.service.type }}
