@@ -7,4 +7,4 @@ configmap:
 
 image:
   name: frendzprasath/centos-nginx
-  tag: v2
+  tag: v3
