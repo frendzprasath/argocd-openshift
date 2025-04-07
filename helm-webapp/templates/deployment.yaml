@@ -20,7 +20,7 @@ spec:
       - name: mycontainer
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         envFrom:
         - configMapRef:
             name: {{ .Values.configmap.name }}
@@ -31,7 +31,3 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
-        securityContext:
-          runAsUser: 10001
-          runAsNonRoot: true
-          allowPrivilegeEscalation: false
