@@ -10,6 +10,6 @@ RUN yum -y install nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD index.html /usr/share/nginx/html/index.html
  
-EXPOSE 8080/tcp
+EXPOSE 8080
  
 CMD ["nginx", "-c", "/etc/nginx/nginx.conf", "-g", "daemon off;"]
