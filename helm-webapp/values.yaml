@@ -7,7 +7,7 @@ configmap:
 
 image:
   name: frendzprasath/centos-nginx
-  tag: v1
+  tag: v2
 
 service:
   type: ClusterIP
