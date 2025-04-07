@@ -8,7 +8,7 @@ RUN yum -y update
 RUN yum -y install nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
-ADD index.html /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
  
 EXPOSE 8080
  
