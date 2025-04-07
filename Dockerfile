@@ -9,6 +9,9 @@ RUN yum -y install nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/index.html
+
+# Fix permissions for non-root access in OpenShift
+RUN chmod -R a+rw /usr/share/nginx/html
  
 EXPOSE 8080
  
